@@ -9,8 +9,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const userRouter = require('../backend/controller/userController')
-const recipeRouter = require('../backend/controller/recipeController')
+const userRouter = require('./controller/userController.js')
+const recipeRouter = require('../backend/controller/recipeController.js')
 require('./db');
 
 cloudinary.config({
